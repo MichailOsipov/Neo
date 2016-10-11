@@ -49,7 +49,10 @@ var Main = Backbone.View.extend({
         $('[data-js-avatar]', this.$el).html(this.avatar.$el);
     }
     , render: function () {
-        this.$el.html("<div class=\"mainContainer\"><h1>Events</h1>" + generateEventsListStr() + "</div>" + avatarDiv);
+        this.$el.html(`
+            <div class="mainContainer">
+                <h1>Events</h1>${generateEventsListStr()}</div>
+            ${avatarDiv}`);
         return this;
     }
     , destroy: function () {
@@ -79,7 +82,7 @@ var Event = Backbone.View.extend({
         $('[data-js-avatar]', this.$el).html(this.avatar.$el);
     }
     , render: function (eventNumber) {
-        this.$el.html("<div class=\"mainContainer\"><h1>Event" + eventNumber + "</h1><a href=\"\">Main page.</a ></div> " + avatarDiv);
+        this.$el.html("<div class=\"mainContainer\"><h1>Event" + eventNumber + "</h1><a href=\"#\">Main page.</a ></div> " + avatarDiv);
         return this;
     }
     , destroy: function () {

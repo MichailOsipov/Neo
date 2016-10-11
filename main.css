@@ -1,0 +1,10 @@
+.mainContainer {
+    display: block;
+    float: left;
+}
+
+.avatar {
+    display: block;
+    float: left;
+    background-color: darkorange;
+}

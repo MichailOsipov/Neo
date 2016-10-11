@@ -1,10 +1,15 @@
 .mainContainer {
     display: block;
     float: left;
+    width: 1200px;
+    height: 800px;
+    margin-left: 100px;
 }
 
 .avatar {
     display: block;
     float: left;
-    background-color: darkorange;
+    width: 300px;
+    height: 800px;
+    border-left: 2px solid;
 }

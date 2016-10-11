@@ -90,7 +90,7 @@ var Personal = Backbone.View.extend({
         this.render();
     }
     , render: function () {
-        this.$el.html("<h1>Your avatar here!</h1><a href=\"#personal\"><img src=\"cFOL3eZxYaM.jpg\"></a><a href=\"\">Main page.</a>");
+        this.$el.html("<h1>Your avatar here!</h1><img src=\"cFOL3eZxYaM.jpg\"><a href=\"\">Main page.</a>");
         return this;
     }
     , destroy: function () {
